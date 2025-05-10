@@ -1,50 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Delta Executor for iOS</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SkibidiScript Delta iOS</title>
   <style>
     body {
-      background-color: #121212;
+      font-family: 'Arial', sans-serif;
+      background: #111;
       color: white;
-      font-family: Arial, sans-serif;
       text-align: center;
-      padding: 50px;
+      padding: 30px;
     }
     h1 {
-      color: #00ffcc;
+      font-size: 3em;
+      margin-bottom: 10px;
     }
-    .download-button {
-      background-color: #00ffcc;
-      color: black;
+    .button {
+      display: inline-block;
       padding: 15px 30px;
-      font-size: 20px;
+      margin: 10px;
       border: none;
       border-radius: 8px;
+      font-size: 1.2em;
       cursor: pointer;
-      margin-top: 30px;
+      color: white;
+      background: #4CAF50;
+      transition: background 0.3s;
+      text-decoration: none;
     }
-    .download-button:hover {
-      background-color: #00e6b8;
+    .button:hover {
+      background: #45a049;
     }
-    .notice {
-      margin-top: 20px;
-      font-size: 14px;
-      color: #cccccc;
+    .locked {
+      background: gray;
+    }
+    .task {
+      margin: 15px 0;
+      font-size: 1.1em;
+    }
+    .task button {
+      margin-left: 10px;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Delta Executor for iOS</h1>
-  <p>Tap the button below to get started!</p>
+  <h1>Delta Executor iOS</h1>
 
-  <a href="https://example.com/DeltaInstaller.ipa" download>
-    <button class="download-button">Download Delta Executor</button>
-  </a>
+  <a class="button" href="https://mediafire.com/your-ipalink" id="ipaBtn">Download IPA</a>
 
-  <div class="notice">
-    This is a free tool for Roblox. Works on iOS 15–17 with Delta exploit.
+  <h2>🔒 Unlock to Download</h2>
+  <div class="task">
+    1. <a href="https://www.youtube.com/@SkibidiScript_RBLX" target="_blank">Subscribe to me</a> ✅
   </div>
+  <div class="task">
+    2. <a href="https://www.youtube.com/watch?v=WdMepzB_2u0" target="_blank">Comment on this video</a> ✅
+  </div>
+  <div class="task">
+    3. <a href="https://www.roblox.com/users/7299653886/profile?friendshipSourceType=PlayerSearch" target="_blank">Follow me on Roblox</a> ✅
+  </div>
+
+  <button class="button" onclick="unlockDownload()">✅ Unlock</button>
+
+  <div style="margin-top: 40px;">
+    <a class="button" href="https://www.youtube.com/@SkibidiScript_RBLX" target="_blank">YouTube Channel</a>
+  </div>
+
+  <script>
+    function unlockDownload() {
+      alert("Unlocked 🔓! Now installing Delta...");
+      window.location.href = "https://mediafire.com/your-ipalink";
+    }
+  </script>
 </body>
 </html>
